@@ -68,6 +68,7 @@ app.get('/login', (req, res) => {
     res.redirect(`https://accounts.spotify.com/authorize?${queryParams}`);
 });
 
+//broken
 app.get('/callback', (req, res) => {
     //first get parameter from the uri
     //if parameter is not present, then set it to null
