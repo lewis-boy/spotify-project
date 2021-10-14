@@ -14,7 +14,7 @@
     "start": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "server": "nodemon index.js",
     "client": "cd client && npm start",
-    "heroku-postbuild": "NODE_ENV=production cd client/ && npm install && npm run build",
+    "heroku-postbuild": "NODE_ENV=production",
     "start-server": "node index.js"
   },
   "keywords": [],
