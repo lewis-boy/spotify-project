@@ -17,6 +17,7 @@ const PORT = process.env.PORT || 8888;
 
 // Priority serve any static files.
 app.use(express.static(path.resolve(__dirname, './client/build')));
+app.use(express.static('public'));
 
 app.get('/', (req, res) =>{
     const data = {
