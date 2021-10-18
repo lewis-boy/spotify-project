@@ -16,8 +16,8 @@ const PORT = process.env.PORT || 8888;
 //"postinstall": "cd client && npm install"
 
 // Priority serve any static files.
-app.use(express.static(path.resolve(__dirname, './client/build')));
-app.use(express.static('public'));
+app.use(express.static(path.resolve(__dirname, './app/client/build')));
+
 
 app.get('/', (req, res) =>{
     const data = {
